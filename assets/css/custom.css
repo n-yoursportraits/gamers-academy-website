@@ -5,3 +5,11 @@
 #partners .logos img {
     width: 130px;
 }
+
+
+
+@media (max-width: 576px) {
+    .ts-promo-number-divider {
+        display: none;
+    }
+}
