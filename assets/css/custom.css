@@ -1,5 +1,10 @@
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .navbar-brand img {
-    height: 80px;
+    height: 30px;
 }
 
 #partners .logos img {
@@ -12,4 +17,17 @@
     .ts-promo-number-divider {
         display: none;
     }
+}
+
+.feature-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.pricing--gold-packet {
+    border: 5px solid #e55f5f;
+}
+
+#pricing .fa-check-circle {
+    color: #5cb85c;
 }
