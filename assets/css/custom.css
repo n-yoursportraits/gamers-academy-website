@@ -66,3 +66,8 @@
     object-fit: cover;
     z-index: -100;
 }
+
+
+.ts-price-box__promoted .ts-title {
+    transform: none;
+}
