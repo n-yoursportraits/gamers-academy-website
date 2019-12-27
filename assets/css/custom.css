@@ -32,17 +32,17 @@
     color: #5cb85c;
 }
 
-.pricing--gold-packet {
+/* .pricing--gold-packet {
     border: 5px solid #FFD700;
-}
-
+} */
+/* 
 #sign-up .ts-price-box__promoted .ts-title {
     background: #DAA520;
-}
+} */
 
-#sign-up .package-title {
+/* #sign-up .package-title {
     background: #FFD700 !important;
-}
+} */
 
 .video-preview {
     position: relative;

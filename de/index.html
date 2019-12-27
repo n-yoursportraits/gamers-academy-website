@@ -43,22 +43,54 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '2402429686640540');
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none" 
-            src="https://www.facebook.com/tr?id=2402429686640540&ev=PageView&noscript=1"/>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2402429686640540&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
+
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('tn7u774bchss');
+    </script>
+    <!-- End of Async Drift Code -->
 
 </head>
 
@@ -120,14 +152,15 @@
                     </a>
                 </div>
                 <p class="mb-1 text-white">
-                    Jahreszugang ab 2,46 Euro/ Monat
+                    Nur für begrenzte Zeit! Melde dich jetzt an und lerne vom FIFA Europameister für nur 9,99 Euro
+                    <s>69,99 Euro</s>
                 </p>
-                <p class="mb-4 text-white">
+                <!-- <p class="mb-4 text-white">
                     X-Mas special! Nur für begrenzte Zeit gibt es 50% auf alle Packages
-                </p>
+                </p> -->
 
                 <a href="#sign-up" class="btn btn-primary btn-lg ts-scroll">
-                    START FREE TRIAL
+                    START NOW
                 </a>
             </div>
             <!--end container-->
@@ -200,7 +233,7 @@
                                 <figure class="icon mb-5 p-2">
                                     <img src="/assets/img/website/icon-chat.png" alt="">
                                 </figure>
-                                <h4>3 Day, Free Trial!</h4>
+                                <h4>Kein Risiko</h4>
                                 <p>
                                     Kein Risiko, 100% Geld-zurück-Garantie. Schickt uns eine Nachricht, falls ihr so gut
                                     bei FIFA seid, dass selbst ein Europameister euch nichts Neues zeigen kann.
@@ -329,7 +362,7 @@
                                 <li>5 Hacks, um dein Spiel zu verbessern.</li>
                             </ul>
                             <div>
-                                <a href="#sign-up" class="btn btn-primary m-1 px-3">START FREE TRIAL</a>
+                                <a href="#sign-up" class="btn btn-primary m-1 px-3">START NOW</a>
                             </div>
                         </div>
                         <!--end col-xl-5-->
@@ -377,7 +410,7 @@
                                 <li>Das ideale Team-Setup.</li>
                             </ul>
                             <div>
-                                <a href="#sign-up" class="btn btn-primary m-1 px-3">START FREE TRIAL</a>
+                                <a href="#sign-up" class="btn btn-primary m-1 px-3">START NOW</a>
                             </div>
                         </div>
                         <!--end col-xl-5-->
@@ -425,7 +458,7 @@
                                 <li>5 Skill-Trainingshacks.</li>
                             </ul>
                             <div>
-                                <a href="#sign-up" class="btn btn-primary m-1 px-3">START FREE TRIAL</a>
+                                <a href="#sign-up" class="btn btn-primary m-1 px-3">START NOW</a>
                             </div>
                         </div>
                         <!--end col-xl-5-->
@@ -450,7 +483,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="ts-title mb-4 w-100 text-center">
-                            <h2>Coach & PRO Gamer Kevin</h2>
+                            <h2>Coach & FIFA Europameister</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -507,85 +540,19 @@
                     </div> -->
                     <!--end ts-title-->
                     <div class="row no-gutters ts-cards-same-height">
-                        <!--Price Box-->
-                        <div class="col-sm-4 col-lg-4">
-                            <div class="card text-center ts-price-box" data-animate="ts-fadeInUp">
-                                <div class="card-header p-0">
-                                    <h5 class="mb-0 py-3" data-bg-color="#eae6e6">SILVER</h5>
-                                    <div class="ts-title py-5 mb-0">
-                                        <h3 class="mb-0 font-weight-normal">
-                                            1,23€ pro Monat/ <s>2,46€ pro Monat</s>
-                                        </h3>
-                                        <p class="mb-0">(14,99€ pro Jahr; <s>29,99€ pro Jahr</s>)</p>
-                                        <p class="mb-0"> <b>50% X-Mas Special!</b></p>
-                                        <p class="mb-0"> <b>3 Tage, FREE TRIAL</b></p>
-                                    </div>
-                                </div>
-                                <!--end card-header-->
-                                <div class="card-body p-0">
-                                    <ul class="list-unstyled ts-list-divided text-left ml-4 mr-4">
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            1 Jahr Zugriff auf alle Classes
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <p class="mb-2">
-                                                    <i class="fas fa-check-circle"></i>
-                                                    Mehr als 10 Episoden
-                                                </p>
-                                                <p class="ml-4 mb-0 text-left">&bull; Classes “ Werde FIFA PROFI”</p>
-                                                <p class="ml-4 mb-0 text-left">&bull; Classes “Lese das Spiel” </p>
-                                                <p class="ml-4 mb-0 text-left">&bull; Classes “Dominiere das Spiel”</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Exklusive “Cheat-Sheets” zu jeder Episode
-                                        </li>
-
-                                        <li><s class="ts-opacity__50">20% Rabatt auf alle Under-Armour-Produkte</s></li>
-                                        <li><s class="ts-opacity__50">20% Rabatt auf alle Brain Effect-Produkte</s></li>
-                                        <!-- <li><s class="ts-opacity__50">20% GoPro Discount</s></li>
-                                        <li><s class="ts-opacity__50">20% Dynostics Discount</s></li> -->
-                                        <li><s class="ts-opacity__50">Das Lieblingsbuch des Europameisters
-                                                “Siegerdenken”</s></li>
-
-                                        <li>
-                                            <s class="ts-opacity__50">1h persönliches Coaching mit dem FIFA
-                                                Europameister </s>
-                                        </li>
-                                        <li><s class="ts-opacity__50">E-Mail Support vom FIFA Europameister</s></li>
-                                        <li><s class="ts-opacity__50">12.000 FIFA Punkte</s></li>
-
-                                    </ul>
-                                    <!--end list-->
-                                </div>
-                                <!--end card-body-->
-                                <div class="card-footer bg-transparent pt-0 ts-border-none">
-                                    <a href="https://app.gamers-academy.com/orders/customer_info?o=24380"
-                                        class="btn btn-outline-dark ts-btn-border-muted">Start Free Trial</a>
-                                </div>
-                            </div>
-                            <!--end card-->
-                        </div>
-                        <!--end price-box col-md-4-->
 
                         <!--Price Box Promoted-->
-                        <div id="sign-up" class="col-sm-4 col-lg-4">
-                            <div class="card text-center ts-price-box ts-price-box__promoted pricing--gold-packet"
-                                data-animate="ts-fadeInUp" data-delay="0.1s">
+                        <div id="sign-up" class="col-md-6 offset-md-3">
+                            <div class="card text-center ts-price-box ts-price-box__promoted" data-animate="ts-fadeInUp"
+                                data-delay="0.1s">
                                 <div class="card-header p-0" data-bg-color="#ff6a6a">
                                     <h5 class="mb-0 py-3 text-white package-title" data-bg-color="#e55f5f"
                                         data-bg-color="#FFD700">
                                         GOLD</h5>
                                     <div class="ts-title text-white py-5 mb-0">
                                         <h3 class="mb-0 font-weight-normal">
-                                            2,86€ pro Monat/ <s>5,72€ pro Monat </s>
+                                            9,95€ <s>69,99€</s>/pro Monat
                                         </h3>
-                                        <p class="mb-0">(34,99€ pro Jahr; <s>69,99€ pro Jahr</s>)</p>
-                                        <p class="mb-0"> <b>50% X-Mas Special!</b></p>
-                                        <p class="mb-0"> <b>3 Tage, FREE TRIAL</b></p>
                                     </div>
                                 </div>
                                 <!--end card-header-->
@@ -625,109 +592,19 @@
                                             <i class="fas fa-check-circle"></i>
                                             Das Lieblingsbuch des Europameisters“Siegerdenken”
                                         </li>
-
-                                        <li>
-                                            <s class="ts-opacity__50">1h persönliches Coaching mit dem FIFA
-                                                Europameister </s>
-                                        </li>
-                                        <li><s class="ts-opacity__50">E-Mail Support vom FIFA Europameister</s></li>
-                                        <li><s class="ts-opacity__50">12.000 FIFA Punkte</s></li>
                                     </ul>
                                     <!--end list-->
                                 </div>
                                 <!--end card-body-->
                                 <div class="card-footer bg-transparent pt-0 ts-border-none">
                                     <a href="https://app.gamers-academy.com/orders/customer_info?o=24381"
-                                        class="btn btn-primary">Start Free Trial</a>
+                                        class="btn btn-primary">START NOW</a>
                                 </div>
                             </div>
                             <!--end card-->
                         </div>
                         <!--end price-box col-md-4-->
 
-                        <!--Price Box-->
-                        <div class="col-sm-4 col-lg-4">
-                            <div class="card text-center ts-price-box" data-animate="ts-fadeInUp" data-delay="0.2s">
-                                <div class="card-header p-0">
-                                    <h5 class="mb-0 py-3" data-bg-color="#eae6e6">PLATINUM</h5>
-                                    <div class="ts-title py-5 mb-0">
-                                        <h3 class="mb-0 font-weight-normal">
-                                            12,33€ pro Monat/ <s>24,66€ pro Monat</s>
-                                        </h3>
-                                        <p class="mb-0">(149,99€ pro Jahr; <s>299,99€ pro Jahr</s>)</p>
-                                        <p class="mb-0"> <b>50% X-Mas Special!</b></p>
-                                        <p class="mb-0"> <b>3 Tage, FREE TRIAL</b></p>
-                                    </div>
-                                </div>
-                                <!--end card-header-->
-                                <div class="card-body p-0">
-                                    <ul class="list-unstyled ts-list-divided text-left ml-4 mr-4">
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            1 Jahr Zugriff auf alle Classes
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <p class="mb-2">
-                                                    <i class="fas fa-check-circle"></i>
-                                                    Mehr als 10 Episoden
-                                                </p>
-                                                <p class="ml-4 mb-0 text-left">&bull; Classes “ Werde FIFA PROFI”
-                                                </p>
-                                                <p class="ml-4 mb-0 text-left">&bull; Classes “Lese das Spiel” </p>
-                                                <p class="ml-4 mb-0 text-left">&bull; Classes “Dominiere das Spiel”
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Exklusive “Cheat-Sheets” zu jeder Episode
-                                        </li>
-
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Exklusive “Cheat-Sheets” zu jeder Episode
-                                        </li>
-
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            20% Rabatt auf alle Under-Armour-Produkte
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            20% Rabatt auf alle Brain Effect-Produkte
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Das Lieblingsbuch des Europameisters“Siegerdenken”
-                                        </li>
-
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            1h persönliches Coaching mit dem FIFA
-                                            Europameister
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            E-Mail Support vom FIFA Europameister
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            12.000 FIFA Punkte
-                                        </li>
-
-                                    </ul>
-                                    <!--end list-->
-                                </div>
-                                <!--end card-body-->
-                                <div class="card-footer bg-transparent pt-0 ts-border-none">
-                                    <a href="https://app.gamers-academy.com/orders/customer_info?o=24382"
-                                        class="btn btn-outline-dark ts-btn-border-muted">Start Free Trial</a>
-                                </div>
-                            </div>
-                            <!--end card-->
-                        </div>
-                        <!--end price-box col-md-4-->
                     </div>
                     <!--end row-->
                 </div>
@@ -742,12 +619,12 @@
                     <div class="ts-title">
                         <h2>Werde zum FIFA PROFI - Starte JETZT!</h2>
                         <h5>
-                            X-Mas Special! Melde dich jetzt an und profitiere von unserem 50% Rabatt. Nutze einfach den
-                            Rabattcode <b>KEVIN50</b>.
+                            Nur für begrenzte Zeit! Melde dich jetzt an und lerne vom FIFA Europameister für nur 9,95
+                            Euro <s>69,99 Euro</s>.
                         </h5>
                     </div>
                     <!--end ts-title-->
-                    <a href="#sign-up" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#sign-up" class="btn btn-primary">START NOW</a>
                 </div>
             </section>
             <!--END BUY NOW *****************************************************************************************-->
