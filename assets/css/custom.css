@@ -11,8 +11,6 @@
     width: 130px;
 }
 
-
-
 @media (max-width: 576px) {
     .ts-promo-number-divider {
         display: none;
@@ -70,4 +68,42 @@
 
 .ts-price-box__promoted .ts-title {
     transform: none;
+}
+
+
+
+
+#de-page .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+
+    position: absolute !important;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#de-page .navbar .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding: .5rem 1rem;
+}
+
+.announcement {
+    width: 100%;
+    background-color: #ff6a6a;
+    padding: .5rem 1rem;
+    left: 0;
+    right: 0;
+}
+
+.announcement p {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
 }
