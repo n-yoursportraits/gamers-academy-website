@@ -78,11 +78,14 @@
             <!--NAVIGATION ******************************************************************************************-->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top ts-separate-bg-element" data-bg-color="#1d1d1d">
 
-                <div class="announcement">
-                    <p>
-                        🎮 NEUJAHRS-SALE 🎮 Lerne FIFA 20 von einem Europameister ⚽ Bis zum 9.
-                        Januar für nur 9,95€. Noch 7 Tage!
-                    </p>
+                <div id="announcement-bar" class="announcement announcement-countdown" style="display: none;">
+                    <div id="countdown-timer">
+                        <div id="countdown-timer--label">NEUJAHRS SALE! 85% OFF.</div>
+
+                        <div id="countdown-timer--hours">23h</div>
+                        <div id="countdown-timer--minutes">59min</div>
+                        <div id="countdown-timer--seconds">59sek</div>
+                    </div>
                 </div>
 
                 <div class="container">
@@ -712,6 +715,9 @@
     <script src="/assets/js/jquery.validate.min.js"></script>
     <script src="/assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
     <script src="/assets/js/custom.js"></script>
+
+
+    <script src="/assets/js/website.js"></script>
 
 </body>
 

@@ -178,3 +178,47 @@
     height: 45px;
     font-size: 18px;
 }
+
+
+.announcement-countdown {
+    justify-content: center;
+}
+
+#countdown-timer {
+    padding: .5rem;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ff6a6a;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+}
+
+#countdown-timer--label {
+    margin-right: 20px;
+}
+
+#countdown-timer--hours,
+#countdown-timer--minutes,
+#countdown-timer--seconds {
+    margin: 0 5px 0 0;
+    color: #ff6a6a;
+    background: #fff;
+    border-radius: 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 5px .5rem;
+    font-size: 18px;
+}
